@@ -3,15 +3,30 @@
 	$(function () {
 
 		'use strict';
+		var sideMenu = $('#sideMenu')
+		var searchFormHeader = $('.searchFormHeader')
+		var searchFormHeaderInput = $('.searchFormHeader input')
 
-		$('.icon').on('click' ,function(){
-			$('#sideMenu').toggleClass('visible')
+		//Show side menu
+		$('.sideMenuToggle').on('click' ,function(){
+			sideMenu.toggleClass('visible')
 		})
 
+		//Show search field
 		$('.searchIcon').on('click' ,function(){
-			$('.searchFormHeader').toggleClass('visible')
-			$('.searchFormHeader input').toggleClass('visible')
+			searchFormHeader.toggleClass('visible')
+			searchFormHeaderInput.toggleClass('visible')
 		})
+
+		//click on body hides layouts
+
+		$('.wrapper').on('click' ,function(){
+			sideMenu.removeClass('visible')
+			searchFormHeader.removeClass('visible')
+			searchFormHeaderInput.removeClass('visible')
+		})
+
+
 
 
 	});
