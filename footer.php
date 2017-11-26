@@ -12,9 +12,11 @@
 			<!-- /footer -->
 
 		</div>
-		<!-- /wrapper -->
+		<!-- page Content -->
+
 
 		<?php wp_footer(); ?>
+		</div> <!-- main Container -->
 
 		<!-- analytics -->
 		<script>

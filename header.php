@@ -25,6 +25,8 @@
 	</head>
 	<body <?php body_class(); ?>>
 
+			<div class="mainContainer">
+
 			<!-- header -->
 			<header class="header clear" role="banner">
 
@@ -47,5 +49,5 @@
 			</header>
 			<!-- /header -->
 
-			<!-- wrapper -->
-			<div class="wrapper">
+			<!-- page Content -->
+			<div class="pageContent">

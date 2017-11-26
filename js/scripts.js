@@ -6,6 +6,7 @@
 		var sideMenu = $('#sideMenu')
 		var searchFormHeader = $('.searchFormHeader')
 		var searchFormHeaderInput = $('.searchFormHeader input')
+		var liWithSubMenu = $('.sideMenu ul li:has(ul)')
 
 		//Show side menu
 		$('.sideMenuToggle').on('click' ,function(){
@@ -20,13 +21,14 @@
 
 		//click on body hides layouts
 
-		$('.wrapper').on('click' ,function(){
+		$('.pageContent').on('click' ,function(){
 			sideMenu.removeClass('visible')
 			searchFormHeader.removeClass('visible')
 			searchFormHeaderInput.removeClass('visible')
 		})
 
 
+		liWithSubMenu.prepend("<span class='fa fa-chevron-left'> </span>")
 
 
 	});
