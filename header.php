@@ -32,6 +32,7 @@
 					<nav class="nav topMenu" role="navigation">
 						<span class="icon fa fa-bars"></span>
 						<?php enlace_nav(); ?>
+						<?php get_template_part('searchformHeader'); ?>
 					</nav>
 					<!-- /nav -->
 
