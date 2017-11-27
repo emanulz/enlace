@@ -27,27 +27,32 @@
 
 			<div class="mainContainer">
 
-			<!-- header -->
-			<header class="header clear" role="banner">
+				<!-- logo -->
+				<div class="topLogo" role="logo">
 
-					<!-- nav -->
-					<nav class="nav topMenu" role="navigation">
-						<span class="sideMenuToggle icon fa fa-bars"></span>
-						<?php enlace_nav(); ?>
-						<?php get_template_part('searchformHeader'); ?>
-					</nav>
-					<!-- /nav -->
+				</div>
+				<!-- /logo -->
 
-					<!-- side menu -->
-					<nav id="sideMenu" class="sideMenu">
-						<div class="sideMenu-items">
-							<?php enlace_sidenav(); ?>
-						</div>
-					</nav>
-					<!-- side menu -->
+				<!-- header -->
+				<header class="header clear" role="banner">
+						<!-- nav -->
+						<nav class="nav topMenu" role="navigation">
+							<span class="sideMenuToggle icon fa fa-bars"></span>
+							<?php enlace_nav(); ?>
+							<?php get_template_part('searchformHeader'); ?>
+						</nav>
+						<!-- /nav -->
 
-			</header>
-			<!-- /header -->
+						<!-- side menu -->
+						<nav id="sideMenu" class="sideMenu">
+							<div class="sideMenu-items">
+								<?php enlace_sidenav(); ?>
+							</div>
+						</nav>
+						<!-- side menu -->
 
-			<!-- page Content -->
-			<div class="pageContent">
+				</header>
+				<!-- /header -->
+
+				<!-- page Content -->
+				<div class="pageContent">
