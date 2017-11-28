@@ -2,7 +2,7 @@
 
 	<main role="main">
 	<!-- section -->
-		<section>
+		<section class="singleContainer">
 
 			<div class="singleMain">
 
@@ -47,11 +47,31 @@
 						</div>
 
 						<div class="singleMain-info">
-							<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
 
-							<p><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
+							<div class="singleMain-info-share">
+								<span>Comparte en tus redes sociales: </span>
+								<?php echo do_shortcode('[ssba-buttons]'); ?>
+							</div>
 
-							<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
+							<!--
+							<div class="singleMain-info-author">
+								<p><?php //_e( 'Publicado por ', 'html5blank' ); the_author(); ?></p>
+							</div> -->
+
+							<div class="singleMain-info-tags">
+								<span>Etiquetas:</span>
+								<?php the_tags( __( '', 'html5blank' ), ' ',''); // Separated by commas with a line break at the end ?>
+							</div>
+
+							<div class="singleMain-info-category">
+								<span>Categorías Relacionadas:</span>
+								<p><?php _e( '', 'html5blank' ); the_category(''); // Separated by commas ?></p>
+							</div>
+
+							<div class="singleMain-info-related">
+								<?php get_template_part('relatedNoImage'); ?>
+							</div>
+
 
 						</div>
 
@@ -81,12 +101,12 @@
 			</div>
 			<!-- /Single Main -->
 			<div class="singleSideBar">
+				<?php get_sidebar(); ?>
 			</div>
 			<!-- /Single Side Bar -->
 		</section>
 		<!-- /section -->
 	</main>
 
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

@@ -1,3 +1,10 @@
+.singleContainer
+  width: 100%
+  @media only screen and (min-width: 971px)
+    display: flex
+    flex-flow: row
+    justify-content: space-between
+
 .singleMain
   width: 100%
   & h1
@@ -35,3 +42,41 @@
     text-align: justify
     font-size: 16px
     font-weight: normal
+    padding-bottom: 20px
+    border-bottom: 1px solid #D6D6D6
+  &-info
+    font-size: 15px
+    font-weight: normal
+    &-share
+      font-weight: bold
+      font-size: 20px
+      margin-top: 20px
+      padding-bottom: 20px
+      border-bottom: 1px solid #D6D6D6
+      & .ssba
+        margin-top: 5px
+        & div[style]
+          text-align: left !important
+
+    &-tags
+      margin-top: 20px
+      padding-bottom: 20px
+      border-bottom: 1px solid #D6D6D6
+      & span
+        display: block
+        font-size: 18px
+        margin-bottom: 10px
+      & a
+        display: inline-block
+        padding: 10px
+        background-color: $PRIMARY_COLOR
+        text-align: center
+        color: white
+        &:hover
+          background-color: $SECONDARY_COLOR
+
+
+.singleSideBar
+  width: 100%
+  @media only screen and (min-width: 971px)
+    width: 33.33%
