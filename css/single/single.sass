@@ -2,11 +2,33 @@
   width: 100%
   & h1
     font-size: 32px
+    margin-bottom: 10px
   @media only screen and (min-width: 971px)
     width: 66.66%
   &-header
     border-bottom: 1px solid #D6D6D6
     padding-bottom: 20px
+    &-bottom
+      display: flex
+      flex-flow: row
+      height: 40px
+      color: #605050
+      &-time
+        width: 50%
+        line-height: 60px
+        font-size: 11px
+        @media only screen and (min-width: 480px)
+          font-size: 14px
+        & i
+          margin-right: 10px
+      &-social
+        width: 50%
+        line-height: 50px
+        & .ssba img
+          width: 25px !important
+          @media only screen and (min-width: 480px)
+            width: 35px !important
+
   &-image
     margin-top: 20px
   &-content

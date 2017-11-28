@@ -75,8 +75,8 @@
   .topMenu .searchFormHeader {
     background-color: #9F1517;
     position: absolute;
-    left: calc(100% - 100px);
-    padding: 0 28px;
+    left: calc(100% - 80px);
+    padding: 0 28px 0 0;
     top: 123px;
     line-height: 20px;
     display: -webkit-flex;
@@ -90,7 +90,8 @@
     transition: all 0.4s ease; }
     .topMenu .searchFormHeader.visible {
       width: 100%;
-      left: 0; }
+      left: 0;
+      padding-left: 30px; }
     .topMenu .searchFormHeader input {
       height: 35px;
       padding-left: 15px;
@@ -212,13 +213,36 @@
 .singleMain {
   width: 100%; }
   .singleMain h1 {
-    font-size: 32px; }
+    font-size: 32px;
+    margin-bottom: 10px; }
   @media only screen and (min-width: 971px) {
     .singleMain {
       width: 66.66%; } }
   .singleMain-header {
     border-bottom: 1px solid #D6D6D6;
     padding-bottom: 20px; }
+    .singleMain-header-bottom {
+      display: flex;
+      flex-flow: row;
+      height: 40px;
+      color: #605050; }
+      .singleMain-header-bottom-time {
+        width: 50%;
+        line-height: 60px;
+        font-size: 11px; }
+        @media only screen and (min-width: 480px) {
+          .singleMain-header-bottom-time {
+            font-size: 14px; } }
+        .singleMain-header-bottom-time i {
+          margin-right: 10px; }
+      .singleMain-header-bottom-social {
+        width: 50%;
+        line-height: 50px; }
+        .singleMain-header-bottom-social .ssba img {
+          width: 25px !important; }
+          @media only screen and (min-width: 480px) {
+            .singleMain-header-bottom-social .ssba img {
+              width: 35px !important; } }
   .singleMain-image {
     margin-top: 20px; }
   .singleMain-content {
