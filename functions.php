@@ -264,7 +264,7 @@ function html5wp_index($length) // Create 20 Word Callback for Index page Excerp
 
 function enlace_exerpt_60($length) // Create 60 Word Callback for Index page Excerpts, call using html5wp_excerpt('html5wp_index');
 {
-    return 60;
+    return 50;
 }
 
 // Create 40 Word Callback for Custom Post Excerpts, call using html5wp_excerpt('html5wp_custom_post');
