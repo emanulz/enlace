@@ -104,9 +104,10 @@
           min-height: 100%
 
     &-data
-      flex-grow: 1
       width: 70%
       padding-left: 30px
+      @media only screen and (min-width: $BREAK_POINT_MID)
+        flex-grow: 1
       & h3
         margin-top: 0
         font-size: 18px

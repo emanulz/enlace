@@ -1,3 +1,11 @@
+.topLogo
+  width: 100%
+  &-container
+    margin: 0 auto
+    & img
+      margin: 0 auto
+      display: block
+      width: 300px
 
 .topMenu
   width: 100%
@@ -43,7 +51,7 @@
         width: 100%
 
   & .searchFormHeader
-    background-color: #9F1517
+    background-color: $SECONDARY_COLOR
     position: absolute
     left: calc(100% - 80px)
     padding: 0 28px 0 0
@@ -75,7 +83,7 @@
         flex-grow: 1
         display: block
     & .searchIcon
-      background-color: #B31718
+      background-color: $PRIMARY_COLOR
       cursor: pointer
       width: 50px
       height: 41px

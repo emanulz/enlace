@@ -29,7 +29,9 @@
 
 				<!-- logo -->
 				<div class="topLogo" role="logo">
-
+					<div class="topLogo-container">
+						<img src="/enlace/wp-content/uploads/2017/11/WhatsApp-Image-2017-11-29-at-1.40.49-AM.jpeg" alt="">
+					</div>
 				</div>
 				<!-- /logo -->
 

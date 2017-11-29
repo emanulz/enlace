@@ -9,7 +9,7 @@
   .mainContainer .topLogo {
     height: 110px !important;
     width: 100%;
-    background: #B31718; }
+    background: white; }
   .mainContainer .header {
     height: 60px !important;
     max-height: 60px;
@@ -19,15 +19,20 @@
   .mainContainer .pageContent {
     min-height: calc(100% - 60px);
     width: 100%;
-    max-width: 970px;
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
     flex-grow: 1;
     padding: 0 30px; }
-    @media only screen and (min-width: 1200px) {
-      .mainContainer .pageContent {
-        max-width: 1100px;
-        width: 1100px; } }
+
+.topLogo {
+  width: 100%; }
+  .topLogo-container {
+    margin: 0 auto; }
+    .topLogo-container img {
+      margin: 0 auto;
+      display: block;
+      width: 300px; }
 
 .topMenu {
   width: 100%;
@@ -484,9 +489,11 @@
           margin: auto;
           min-height: 100%; } }
   .homeMain-latestSix-posts-data {
-    flex-grow: 1;
     width: 70%;
     padding-left: 30px; }
+    @media only screen and (min-width: 971px) {
+      .homeMain-latestSix-posts-data {
+        flex-grow: 1; } }
     .homeMain-latestSix-posts-data h3 {
       margin-top: 0;
       font-size: 18px; }
