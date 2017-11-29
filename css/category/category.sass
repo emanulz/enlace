@@ -1,5 +1,15 @@
+.categoryContainer
+    padding-top: 20px
+    width: 100%
+    @media only screen and (min-width: $BREAK_POINT_MID)
+      display: flex
+      flex-wrap: wrap
+
 .categoryMain
   width: 100%
+  @media only screen and (min-width: $BREAK_POINT_MID)
+    display: inline-block
+    width: 70%
   & article
     padding-bottom: 15px
     border-bottom: 1px solid #D6D6D6
@@ -28,3 +38,26 @@
       width: 33.34%
     &-data
       width: 66.66%
+  & .pagination
+    padding-top: 20px
+    text-align: center
+    font-size: 16px
+    & span
+      padding: 10px
+      display: inline-block
+      font-weight: normal
+    & a
+      display: inline-block
+      padding: 10px
+      color: blue
+      font-weight: normal
+      &:hover
+        color: red
+
+.categorySideBar
+  width: 100%
+  padding-left: 20px
+  display: none
+  @media only screen and (min-width: $BREAK_POINT_MID)
+    display: block
+    width: 30%

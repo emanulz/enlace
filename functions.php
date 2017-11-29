@@ -264,6 +264,16 @@ function html5wp_index($length) // Create 20 Word Callback for Index page Excerp
 
 function enlace_exerpt_60($length) // Create 60 Word Callback for Index page Excerpts, call using html5wp_excerpt('html5wp_index');
 {
+    return 60;
+}
+
+function enlace_exerpt_40($length) // Create 40 Word Callback for Index page Excerpts, call using html5wp_excerpt('html5wp_index');
+{
+    return 40;
+}
+
+function enlace_exerpt_50($length) // Create 40 Word Callback for Index page Excerpts, call using html5wp_excerpt('html5wp_index');
+{
     return 50;
 }
 
@@ -289,6 +299,7 @@ function html5wp_excerpt($length_callback = '', $more_callback = '')
     $output = '<p>' . $output . '</p>';
     echo $output;
 }
+
 
 //Custom View Article link to Post
 function html5_blank_view_article($more)

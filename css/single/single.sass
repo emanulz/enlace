@@ -1,17 +1,17 @@
 .singleContainer
+  padding-top: 20px
   width: 100%
-  @media only screen and (min-width: 971px)
+  @media only screen and (min-width: $BREAK_POINT_MID)
     display: flex
-    flex-flow: row
-    justify-content: space-between
+    flex-wrap: wrap
 
 .singleMain
   width: 100%
   & h1
     font-size: 32px
     margin-bottom: 10px
-  @media only screen and (min-width: 971px)
-    width: 66.66%
+  @media only screen and (min-width: $BREAK_POINT_MID)
+    width: 70%
   &-header
     border-bottom: 1px solid #D6D6D6
     padding-bottom: 20px
@@ -49,7 +49,7 @@
     font-weight: normal
     &-share
       font-weight: bold
-      font-size: 20px
+      font-size: 25px
       margin-top: 20px
       padding-bottom: 20px
       border-bottom: 1px solid #D6D6D6
@@ -74,9 +74,47 @@
         color: white
         &:hover
           background-color: $SECONDARY_COLOR
+    &-category
+      margin-top: 20px
+      padding-bottom: 20px
+      border-bottom: 1px solid #D6D6D6
+      & span
+        display: block
+        font-size: 18px
+        margin-bottom: 10px
+      & ul
+        padding: 0
+        & li
+          display: inline-block
+          list-style: none
+          & a
+            padding: 10px
+            background-color: $PRIMARY_COLOR
+            text-align: center
+            color: white
+            &:hover
+              background-color: $SECONDARY_COLOR
+    &-related
+      & h1
+        font-size: 25px
+        font-weight: bold
+      & ul
+        padding: 0
+        & li
+          display: block
+          list-style: none
+          & h3
+            font-size: 17px
+            margin-bottom: 0
+          & span
+            font-size: 15px
+            font-weight: 300
 
 
 .singleSideBar
   width: 100%
-  @media only screen and (min-width: 971px)
-    width: 33.33%
+  padding-left: 20px
+  display: none
+  @media only screen and (min-width: $BREAK_POINT_MID)
+    display: block
+    width: 30%

@@ -15,7 +15,7 @@
 
     if( $my_query->have_posts() ) {
 
-    echo '<div id="related_posts"><h3>Publicaciones Relacionadas</h3><ul>';
+    echo '<div id="related_posts"><h1>Publicaciones Relacionadas</h1><ul>';
 
     while( $my_query->have_posts() ) {
       $my_query->the_post();
@@ -23,8 +23,9 @@
     <li>
     <div class="relatedcontent">
     <h3><a href="<? the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
-
-    <?php the_time('M j, Y') ?>
+    <span class="relatedcontent-date">
+      <?php the_time('j F, Y'); ?>
+    </span>
     </div>
     </li>
 <?

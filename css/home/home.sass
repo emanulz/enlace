@@ -1,0 +1,116 @@
+.homeBanner
+  width: 100%
+  padding: 20px 0
+  & img
+    display: block
+    margin: 0 auto
+
+.homeContainer
+  padding-top: 20px
+  width: 100%
+  @media only screen and (min-width: $BREAK_POINT_MID)
+    display: flex
+    flex-wrap: wrap
+
+.homeMain
+  width: 100%
+  @media only screen and (min-width: $BREAK_POINT_MID)
+    display: inline-block
+    width: 70%
+.homeSideBar
+  width: 100%
+  padding-left: 20px
+  display: none
+  @media only screen and (min-width: $BREAK_POINT_MID)
+    display: block
+    width: 30%
+
+.homeMain-featured
+  padding: 0
+  margin: 0
+  border-bottom: 1px solid #D6D6D6
+  padding-bottom: 30px
+  & h1
+    font-size: 35px
+    margin-bottom: 10px
+    margin-top: 0
+    & a
+      color: #686868
+  &-container
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    &-image
+      width: 100%
+      @media only screen and (min-width: $BREAK_POINT_MID)
+        width: 60%
+    &-exerpt
+      font-size: 16px
+      font-weight: 400
+      width: 100%
+      text-align: justify
+      @media only screen and (min-width: $BREAK_POINT_MID)
+        width: 40%
+      & p
+        margin-top: 0
+        padding-right: 20px
+      & span
+        font-size: 14px
+      & i
+        font-size: 14px
+
+.homeMain-brunca
+  width: 100%
+  border-bottom: 1px solid #D6D6D6
+  padding-bottom: 30px
+  & h1
+    margin-bottom: 0
+  &-posts
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    & article
+      display: inline-block
+      width: 100%
+      @media only screen and (min-width: $BREAK_POINT_MIN)
+        width: 45%
+      @media only screen and (min-width: $BREAK_POINT_MID)
+        width: 30%
+
+.homeMain-latestSix
+  width: 100%
+  border-bottom: 1px solid #D6D6D6
+  padding-bottom: 30px
+  &-posts
+    & article
+      margin-top: 20px
+      width: 100%
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      @media only screen and (min-width: $BREAK_POINT_MID)
+        max-height: 120px
+    &-image
+      width: 30%
+      overflow: hidden
+      @media only screen and (min-width: $BREAK_POINT_MID)
+        width: 200px
+      & img
+        min-width: 100%
+        max-height: 100%
+        @media only screen and (min-width: $BREAK_POINT_MID)
+          margin: auto
+          min-height: 100%
+
+    &-data
+      flex-grow: 1
+      width: 70%
+      padding-left: 30px
+      & h3
+        margin-top: 0
+        font-size: 18px
+      & span
+        font-size: 13px
+      & i
+        font-size: 13px

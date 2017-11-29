@@ -1,10 +1,15 @@
 <?php get_header(); ?>
 
 	<main role="main">
-		<!-- section -->
-		<section>
+		<section class="homeBanner">
 
-			<h1><?php single_cat_title(); ?></h1>
+			<img src="/enlace/wp-content/uploads/2017/11/Captura-de-pantalla-2017-11-28-a-las-21.22.28.png" alt="">
+
+		</section>
+		<!-- section -->
+		<h1><?php single_cat_title(); ?></h1>
+
+		<section class="categoryContainer">
 
 			<div class="categoryMain">
 				<!-- THE LOOP -->
@@ -63,15 +68,13 @@
 			</div>
 			<!-- Container -->
 
-			<div class="categorySidebar">
-
+			<div class="categorySideBar">
+				<?php get_sidebar(); ?>
 			</div>
 
 		</section>
 		<!-- /section -->
 	</main>
-
-<?php //get_sidebar(); ?>
 
 
 <?php get_footer(); ?>

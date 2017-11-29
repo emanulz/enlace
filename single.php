@@ -6,9 +6,7 @@
 
 			<div class="singleMain">
 
-
 				<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-
 
 					<!-- article -->
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -75,12 +73,6 @@
 
 						</div>
 
-						<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
-
-						<div class="singleMain-comments">
-							<?php comments_template(); ?>
-						</div>
-
 					</article>
 					<!-- /article -->
 
@@ -107,6 +99,5 @@
 		</section>
 		<!-- /section -->
 	</main>
-
 
 <?php get_footer(); ?>
