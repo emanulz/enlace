@@ -23,7 +23,7 @@
         </script>
 
 	</head>
-	<body <?php body_class(); ?>>
+	<body id="pageBody" <?php body_class(); ?>>
 
 			<div class="mainContainer">
 
@@ -36,7 +36,7 @@
 				<!-- /logo -->
 
 				<!-- header -->
-				<header class="header clear" role="banner">
+				<header class="mainHeader header clear" role="banner">
 						<!-- nav -->
 						<nav class="nav topMenu" role="navigation">
 							<span class="sideMenuToggle icon fa fa-bars"></span>
@@ -52,7 +52,6 @@
 							</div>
 						</nav>
 						<!-- side menu -->
-
 				</header>
 				<!-- /header -->
 

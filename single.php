@@ -39,7 +39,7 @@
 							<!-- post thumbnail -->
 							<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
 
-								<?php the_post_thumbnail(); // Fullsize image for the single post ?>
+								<?php the_post_thumbnail('enlace-medium'); // Fullsize image for the single post ?>
 
 							<?php endif; ?>
 							<!-- /post thumbnail -->

@@ -55,7 +55,7 @@
                       <!-- post thumbnail -->
       								<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
       									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-      										<?php the_post_thumbnail(); // Declare pixel size you need inside the array ?>
+      										<?php the_post_thumbnail('enlace-medium'); // Declare pixel size you need inside the array ?>
       									</a>
       								<?php endif; ?>
       								<!-- /post thumbnail -->
@@ -103,7 +103,7 @@
                     <!-- post thumbnail -->
                     <?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
                       <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                        <?php the_post_thumbnail(); // Declare pixel size you need inside the array ?>
+                        <?php the_post_thumbnail('enlace-small'); // Declare pixel size you need inside the array ?>
                       </a>
                     <?php endif; ?>
                     <!-- /post thumbnail -->
@@ -171,7 +171,7 @@
                 <!-- post thumbnail -->
                 <?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
                   <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                    <?php the_post_thumbnail(); // Declare pixel size you need inside the array ?>
+                    <?php the_post_thumbnail('enlace-small'); // Declare pixel size you need inside the array ?>
                   </a>
                 <?php endif; ?>
                 <!-- /post thumbnail -->
