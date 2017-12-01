@@ -13,7 +13,7 @@
 		var topMenu = $('.topMenu')
 
 		var menuHeight = 60
-		var logoHeight = 110
+		var logoHeight = 140
 		var headerHeight = menuHeight + logoHeight
 
 		//Show side menu

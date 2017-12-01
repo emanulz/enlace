@@ -15,7 +15,7 @@
           $args = array(
               'posts_per_page' => 1,
               'offset' => 0,
-              'category_name' => 'destacada',
+              'category_name' => 'destacadaprincipal',
               'orderby' => 'date',
               'order' => 'DESC',
               'post_type' => 'post',
@@ -138,8 +138,8 @@
         <div class="homeMain-brunca-posts">
 
         <?php
-          $categories = array("bruncabuenosaires", "bruncacorredores", "bruncacotobrus", "bruncagolfito",
-                              "bruncaosa", "bruncaperezzeledon" );
+          $categories = array("buenosaires", "corredores", "cotobrus", "golfito",
+                              "osa", "perezzeledon" );
 
 
           foreach ( $categories as $category ) {

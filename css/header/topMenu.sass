@@ -1,11 +1,22 @@
 .topLogo
   width: 100%
   &-container
+    height: 100%
+    max-height: 100%
+    max-width: 1100px
+    display: flex
+    flex-flow: row
+    justify-content: space-between
     margin: 0 auto
+    padding: 10px 20px 0
+    @media only screen and (min-width: 768px)
+      max-height: 100%
     & img
-      margin: 0 auto
+      height: 100%
+      width: auto
+      max-height: 100%
       display: block
-      width: 300px
+
 
 .topMenu
   background-color: $SECONDARY_COLOR
@@ -59,7 +70,7 @@
     position: absolute
     left: calc(100% - 80px)
     padding: 0 28px 0 0
-    top: 123px
+    top: 153px
     line-height: 20px
     display : -webkit-flex
     flex-flow: row
