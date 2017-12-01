@@ -3,7 +3,7 @@
 	<main role="main">
     <section class="homeBanner">
 
-      <img src="/enlace/wp-content/uploads/2017/11/Captura-de-pantalla-2017-11-28-a-las-21.22.28.png" alt="">
+      <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/1.png" alt="">
 
     </section>
 		<!-- section -->
