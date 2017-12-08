@@ -72,7 +72,7 @@
 							</div>
 
 							<div class="singleMain-info-related">
-								<?php //get_template_part('relatedNoImage'); ?>
+								<?php get_template_part('relatedNoImage'); ?>
 							</div>
 
 

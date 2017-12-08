@@ -22,13 +22,14 @@
 ?>
     <li>
     <div class="relatedcontent">
-    <h3><a href="<? the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
+    <h3><a href="<?php the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
     <span class="relatedcontent-date">
-      <?php the_time('j F, Y'); ?>
+    <?php the_time('j F, Y'); ?>
     </span>
     </div>
     </li>
-<?
+
+<?php
 }
 
 echo '</ul></div>';
