@@ -52,7 +52,7 @@
 						<div class="singleMain-info">
 
 							<div class="singleMain-info-share">
-								<span>Comparte en tus redes sociales: </span>
+								<span>Comparte en tus redes socialesSS: </span>
 								<?php echo do_shortcode('[ssba-buttons]'); ?>
 							</div>
 
