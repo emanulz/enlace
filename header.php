@@ -30,8 +30,8 @@
 				<!-- logo -->
 				<div class="topLogo" role="logo">
 					<div class="topLogo-container">
-						<img src="<?php echo get_bloginfo('template_url') ?>/img/logos/headerLogo1.png" alt="">
-						<img src="<?php echo get_bloginfo('template_url') ?>/img/logos/headerLogo2.jpg" alt="">
+						<img src="<?php echo get_bloginfo('template_url') ?>/img/logos/headerLogo1-2.png" alt="">
+						<img src="<?php echo get_bloginfo('template_url') ?>/img/logos/headerLogo2-2.png" alt="">
 					</div>
 				</div>
 				<!-- /logo -->
