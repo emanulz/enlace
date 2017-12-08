@@ -1,9 +1,23 @@
 <?php get_header(); ?>
 
 	<main role="main">
+
 		<section class="homeBanner">
 
-			<img src="<?php echo get_bloginfo('template_url') ?>/img/adds/1.png" alt="">
+				<div id="slideshow">
+					<a href="#">
+						<img src="<?php echo get_bloginfo('template_url') ?>/img/adds/1.png" alt="">
+					</a>
+					<a href="#2">
+						<img src="<?php echo get_bloginfo('template_url') ?>/img/adds/1-2.png" alt="">
+					</a>
+					<a href="#3">
+						<img src="<?php echo get_bloginfo('template_url') ?>/img/adds/1-3.png" alt="">
+					</a>
+					<a href="#4">
+						<img src="<?php echo get_bloginfo('template_url') ?>/img/adds/1-4.png" alt="">
+					</a>
+				</div>
 
 		</section>
 	<!-- section -->
@@ -50,6 +64,20 @@
 						</div>
 
 						<div class="singleMain-info">
+
+							<div class="singleMain-info-author">
+								<span>
+									<?php
+										echo(get_the_author_meta( $field = 'first_name'));
+										echo(" ");
+										echo(get_the_author_meta( $field = 'last_name'));
+									?>
+								</span>
+								<div class="singleMain-info-author-date">
+									<i class="fa fa-calendar-o"></i>
+									<span class="date"><?php the_time('j F, Y'); ?> <?php the_time('g:i a'); ?></span>
+								</div>
+							</div>
 
 							<div class="singleMain-info-share">
 								<span>Comparte en tus redes sociales: </span>

@@ -7,7 +7,31 @@
 
     </section>
 		<!-- section -->
-		<h1><?php single_cat_title(); ?></h1>
+		<h1 class="category-title"><?php single_cat_title(); ?></h1>
+		<!-- CATEGORY HEADER MENU -->
+			<?php
+			$current_cat = get_queried_object();
+			$args = array( 'child_of' => $current_cat->term_id, );
+			$categories = get_categories( $args );
+			if (count($categories) > 0) :
+				?>
+				<div class="categoryHeaderMenu">
+					<ul>
+				<?php foreach($categories as $category) { ?>
+
+					<li>
+						<a href="<?php echo( get_category_link($category->term_id));?>"> <?php echo($category->name); ?></a>
+					</li>
+
+				<?php
+				} // FOR EACH
+				?>
+				</ul>
+				</div>
+				<?php
+			endif;
+			?>
+		<!-- CATEGORY HEADER MENU ENDS -->
 
 		<section class="categoryContainer">
 
@@ -36,7 +60,7 @@
 								<!-- /post title -->
 
 
-								<?php html5wp_excerpt('enlace_exerpt_60'); // Build your custom callback length in functions.php ?>
+								<?php html5wp_excerpt('enlace_exerpt_20'); // Build your custom callback length in functions.php ?>
 
 								<!-- post details -->
 								<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>

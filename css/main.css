@@ -33,6 +33,12 @@ iframe {
     flex-grow: 1;
     padding: 0 30px; }
 
+#slideshow div {
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px; }
+
 .topLogo {
   width: 100%; }
   .topLogo-container {
@@ -212,6 +218,24 @@ iframe {
         .sideMenu ul li ul li {
           position: relative; }
 
+.category-title {
+  font-size: 40px; }
+
+.categoryHeaderMenu {
+  border-bottom: 1px solid #D6D6D6;
+  border-top: 1px solid #D6D6D6; }
+  .categoryHeaderMenu ul {
+    display: flex;
+    flex-flow: row;
+    padding: 0; }
+    .categoryHeaderMenu ul li {
+      font-weight: normal;
+      font-size: 16px;
+      list-style: none;
+      margin: 5px 15px; }
+    .categoryHeaderMenu ul li:first-child {
+      margin-left: 0; }
+
 .categoryContainer {
   padding-top: 20px;
   width: 100%; }
@@ -341,6 +365,18 @@ iframe {
   .singleMain-info {
     font-size: 15px;
     font-weight: normal; }
+    .singleMain-info-author {
+      margin-top: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #D6D6D6;
+      font-size: 16px;
+      font-weight: bold; }
+      .singleMain-info-author-date {
+        margin-top: 5px;
+        font-weight: normal;
+        font-size: 14px; }
+        .singleMain-info-author-date i {
+          margin-right: 10px; }
     .singleMain-info-share {
       font-weight: bold;
       font-size: 25px;
@@ -413,7 +449,9 @@ iframe {
 
 .homeBanner {
   width: 100%;
-  padding: 20px 0; }
+  padding: 20px 0;
+  overflow: hidden;
+  max-height: 110px; }
   .homeBanner img {
     display: block;
     margin: 0 auto; }

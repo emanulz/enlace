@@ -62,6 +62,17 @@
 			}
 		})
 
+		$("#slideshow > a:gt(0)").hide();
+
+		setInterval(function() {
+			$('#slideshow > a:first')
+			.fadeOut(0)
+			.next()
+			.fadeIn(0)
+			.end()
+			.appendTo('#slideshow');
+		}, 6000);
+
 
 
 
