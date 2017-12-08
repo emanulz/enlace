@@ -10,6 +10,7 @@
 		<section class="homeContainer">
 
 			<div class="homeMain">
+				<!-- START OF FIRST SECTION, FEATURED POST -->
         <?php
           $do_not_duplicate = array();
           $args = array(
@@ -44,7 +45,7 @@
 
                     <div class="homeMain-featured-container-exerpt">
                       <!-- post excerpt -->
-                      <?php html5wp_excerpt('enlace_exerpt_40'); // Build your custom callback length in functions.php ?>
+                      <?php html5wp_excerpt('enlace_exerpt_60'); // Build your custom callback length in functions.php ?>
                       <!-- post excerpt -->
                       <!-- post details -->
                       <i class="fa fa-calendar-o"></i>
@@ -69,10 +70,70 @@
           endif;
           wp_reset_postdata();
           ?>
+				<!-- END OF FIRST SECTION, FEATURED POST -->
+				<!-- START OF SECOND SECTION, THREE POSTS -->
+				<div class="homeMain-featuredSecond">
 
-        <div class="homeMain-featuredSecond">
+				<?php
+					$do_not_duplicate = array();
+					$args = array(
+							'posts_per_page' => 3,
+							'offset' => 0,
+							'category_name' => 'destacadasecundaria',
+							'orderby' => 'date',
+							'order' => 'DESC',
+							'post_type' => 'post',
+							'post_status' => 'publish',
+							'suppress_filters' => true,
+							'post__not_in' => $do_not_duplicate
+						);
 
-        </div>
+					$the_query = new WP_Query( $args );
+					//$the_query->the_post();
+					if ( $the_query->have_posts() ) :
+						while ( $the_query->have_posts() ) : $the_query->the_post();
+						$do_not_duplicate[] = $post->ID;
+					?>
+
+					<div class="homeMain-featuredSecond-item">
+
+						<div class="homeMain-featuredSecond-item-image">
+							<!-- post thumbnail -->
+							<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
+								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+									<?php the_post_thumbnail('enlace-medium'); // Declare pixel size you need inside the array ?>
+								</a>
+							<?php endif; ?>
+							<!-- /post thumbnail -->
+						</div>
+
+							<i class="fa fa-calendar-o"></i>
+							<span class="date"><?php the_time('j F, Y'); ?> <?php the_time('g:i a'); ?></span>
+
+							<!-- post title -->
+							<div class="homeMain-featuredSecond-item-tittle">
+								<h2>
+									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+								</h2>
+							</div>
+							<!-- /post title -->
+							<div class="homeMain-featuredSecond-item-exerpt">
+								<?php html5wp_excerpt('enlace_exerpt_20'); // Build your custom callback length in functions.php ?>
+							</div>
+
+
+
+					</div>
+
+
+				<?php
+					endwhile;
+				endif;
+				wp_reset_postdata();
+				?>
+				</div>
+
+				<!-- END OF SECOND SECTION, THREE POSTS -->
 
         <div class="homeMain-latestSix">
 
@@ -164,9 +225,11 @@
               $do_not_duplicate[] = $post->ID;
           ?>
               <article>
-                <h3>
-                  <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-                </h3>
+								<div class="homeMain-brunca-posts-title">
+	                <h3>
+	                  <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+	                </h3>
+								</div>
 
                 <!-- post thumbnail -->
                 <?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>

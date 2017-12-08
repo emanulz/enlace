@@ -45,7 +45,7 @@
       @media only screen and (min-width: $BREAK_POINT_MID)
         width: 60%
     &-exerpt
-      font-size: 16px
+      font-size: 15px
       font-weight: 400
       width: 100%
       text-align: justify
@@ -58,6 +58,33 @@
         font-size: 14px
       & i
         font-size: 14px
+
+.homeMain-featuredSecond
+  display: flex
+  flex-flow: row
+  justify-content: space-between
+  margin-top: 30px
+  border-bottom: 1px solid #D6D6D6
+  padding-bottom: 30px
+  &-item
+    display: block
+    max-width: 30%
+    &-image
+      margin-bottom: 10px
+    &-tittle
+      height: 80px
+      overflow: hidden
+    &-exerpt
+      text-align: justify
+      font-size: 12px
+      font-weight: normal
+    & span
+      font-size: 12px
+    & i
+      margin-right: 5px
+      font-size: 12px
+
+
 
 .homeMain-brunca
   width: 100%
@@ -77,11 +104,15 @@
         width: 45%
       @media only screen and (min-width: $BREAK_POINT_MID)
         width: 30%
+    &-title
+      height: 60px
+      overflow: hidden
 
 .homeMain-latestSix
   width: 100%
   border-bottom: 1px solid #D6D6D6
   padding-bottom: 30px
+  margin-top: 30px
   &-posts
     & article
       margin-top: 20px
