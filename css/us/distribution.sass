@@ -1,0 +1,32 @@
+.distribution
+  width: 100%
+  & h1
+    font-size: 28px
+  & h2
+    font-size: 20px
+
+  & .distContainer
+    display: block
+    padding-bottom: 20px
+    border-bottom: 1px solid #D6D6D6
+    @media only screen and (min-width: $BREAK_POINT_MIN)
+      display: flex
+      flex-flow: row
+
+  & .distImage
+    width: 100%
+    padding-right: 15px
+    margin: 10px 0
+    @media only screen and (min-width: $BREAK_POINT_MIN)
+      width: 50%
+      margin: 0
+
+  & .distData
+    width: 100%
+    @media only screen and (min-width: $BREAK_POINT_MIN)
+      width: 50%
+    & ul
+      padding-left: 15px
+      font-size: 13px
+      font-weight: normal
+      margin: 0

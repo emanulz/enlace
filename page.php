@@ -1,11 +1,9 @@
 <?php get_header(); ?>
 
 	<main role="main">
-		<section class="homeBanner">
-
-			<img src="<?php echo get_bloginfo('template_url') ?>/img/adds/1.png" alt="">
-
-		</section>
+		<!-- TOP BANNER -->
+		<?php get_template_part('topBanner'); ?>
+		<!-- TOP BANNER -->
 		<!-- section -->
 		<section>
 

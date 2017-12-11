@@ -14,7 +14,8 @@
 		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
 	</div>
 
-	<img src="<?php echo get_bloginfo('template_url') ?>/img/adds/2.png" alt="">
+	<img src="<?php echo get_bloginfo('template_url') ?>/img/adds/peq4.jpeg" alt="">
+	<img src="<?php echo get_bloginfo('template_url') ?>/img/adds/peq3.jpeg" alt="">
 
 </aside>
 <!-- /sidebar -->

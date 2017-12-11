@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 	<main role="main">
-		
+
 		<!-- TOP BANNER -->
     <?php get_template_part('topBanner'); ?>
 		<!-- TOP BANNER -->
@@ -29,6 +29,7 @@
           //$the_query->the_post();
           if ( $the_query->have_posts() ) :
             while ( $the_query->have_posts() ) : $the_query->the_post();
+						// array_push($do_not_duplicate, $post->ID);
             $do_not_duplicate[] = $post->ID;
           ?>
             <div class="homeMain-featured">
@@ -75,7 +76,7 @@
 				<div class="homeMain-featuredSecond">
 
 				<?php
-					$do_not_duplicate = array();
+
 					$args = array(
 							'posts_per_page' => 3,
 							'offset' => 0,
@@ -92,6 +93,7 @@
 					//$the_query->the_post();
 					if ( $the_query->have_posts() ) :
 						while ( $the_query->have_posts() ) : $the_query->the_post();
+						// array_push($do_not_duplicate, $post->ID);
 						$do_not_duplicate[] = $post->ID;
 					?>
 
@@ -157,6 +159,7 @@
                 while ( $query->have_posts() ) {
 
                 $query->the_post();
+								// array_push($do_not_duplicate, $post->ID);
                 $do_not_duplicate[] = $post->ID;
             ?>
                 <article>
@@ -222,6 +225,7 @@
               while ( $query->have_posts() ) {
 
               $query->the_post();
+							//array_push($do_not_duplicate, $post->ID);
               $do_not_duplicate[] = $post->ID;
           ?>
               <article>
@@ -262,6 +266,7 @@
 		</section>
 		<!-- /section -->
 	</main>
+
 
 
 
