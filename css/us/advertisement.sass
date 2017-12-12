@@ -1,0 +1,66 @@
+.advertsContainer
+  & h1
+    font-size: 25px
+  & p
+    font-size: 16px
+    text-align: justify
+    font-weight: normal
+  & h2
+    font-size: 22px
+
+.package
+  & h3
+    font-size: 18px
+  & table
+    width: 100%
+    max-width: 100%
+    & thead
+      font-size: 15px
+      background-color: black
+      color: white
+      & tr
+        & th
+          text-align: left
+          padding: 15px
+          &:first-child
+            text-align: left
+  & tbody
+    font-size: 12px
+    & tr
+      text-align: left
+      & td
+        text-align: left
+        padding: 15px
+        font-weight: normal
+        border-bottom: 1px solid #CACACA
+
+.advertsContainer-bottom
+  padding: 35px 0
+  font-size: 15px
+  & h1
+    margin: 0
+  & hr
+    height: 1px
+    display: block
+    border: 0
+    border-top: 1px solid #D6D6D6
+  &-contact
+    display: flex
+    flex-flow: row
+    justify-content: space-between
+    @media only screen and (max-width: $BREAK_POINT_MIN)
+      display: block
+    & h3
+      margin: 0
+    & h4
+      margin: 0
+
+  &-logos
+    display: flex
+    flex-flow: row
+    justify-content: space-between
+    @media only screen and (max-width: $BREAK_POINT_MIN)
+      display: block
+      text-align: center
+    & img
+      max-height: 150px

@@ -745,6 +745,32 @@ iframe {
     list-style: outside;
     font-weight: normal; }
 
+.contactUsContainer h1 {
+  font-size: 30px; }
+
+.contactUsContainer table {
+  max-width: 100%;
+  width: 100%; }
+  .contactUsContainer table thead {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 15px; }
+    .contactUsContainer table thead tr th {
+      padding: 15px; }
+      .contactUsContainer table thead tr th:first-child {
+        text-align: left; }
+  .contactUsContainer table tbody {
+    font-size: 12px;
+    font-weight: normal; }
+    .contactUsContainer table tbody tr {
+      text-align: center;
+      border-bottom: 1px solid #CACACA; }
+      .contactUsContainer table tbody tr td {
+        padding: 15px; }
+        .contactUsContainer table tbody tr td:first-child {
+          text-align: left; }
+
 .distribution {
   width: 100%; }
   .distribution h1 {
@@ -777,6 +803,75 @@ iframe {
       font-size: 13px;
       font-weight: normal;
       margin: 0; }
+
+.advertsContainer h1 {
+  font-size: 25px; }
+
+.advertsContainer p {
+  font-size: 16px;
+  text-align: justify;
+  font-weight: normal; }
+
+.advertsContainer h2 {
+  font-size: 22px; }
+
+.package h3 {
+  font-size: 18px; }
+
+.package table {
+  width: 100%;
+  max-width: 100%; }
+  .package table thead {
+    font-size: 15px;
+    background-color: black;
+    color: white; }
+    .package table thead tr th {
+      text-align: left;
+      padding: 15px; }
+      .package table thead tr th:first-child {
+        text-align: left; }
+
+.package tbody {
+  font-size: 12px; }
+  .package tbody tr {
+    text-align: left; }
+    .package tbody tr td {
+      text-align: left;
+      padding: 15px;
+      font-weight: normal;
+      border-bottom: 1px solid #CACACA; }
+
+.advertsContainer-bottom {
+  padding: 35px 0;
+  font-size: 15px; }
+  .advertsContainer-bottom h1 {
+    margin: 0; }
+  .advertsContainer-bottom hr {
+    height: 1px;
+    display: block;
+    border: 0;
+    border-top: 1px solid #D6D6D6; }
+  .advertsContainer-bottom-contact {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between; }
+    @media only screen and (max-width: 768px) {
+      .advertsContainer-bottom-contact {
+        display: block; } }
+    .advertsContainer-bottom-contact h3 {
+      margin: 0; }
+    .advertsContainer-bottom-contact h4 {
+      margin: 0; }
+  .advertsContainer-bottom-logos {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between; }
+    @media only screen and (max-width: 768px) {
+      .advertsContainer-bottom-logos {
+        display: block;
+        text-align: center; } }
+    .advertsContainer-bottom-logos img {
+      max-height: 150px; }
 
 .sideBannerBig {
   height: 240px;

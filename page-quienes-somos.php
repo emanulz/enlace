@@ -34,7 +34,7 @@
             Ser un referente de comunicación en la gestión humana y empresarial para el desarrollo de la Región Brunca.
           </p>
 
-          <h1>Nuestros Valores Corpotativos</h1>
+          <h1>Nuestros Valores Corporativos</h1>
 
           <ul>
             <li>Servicio</li>
