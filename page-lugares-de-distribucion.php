@@ -181,7 +181,7 @@
               </div>
 
               <div class="distImage">
-                <img src="<?php echo get_bloginfo('template_url') ?>/img/static/golfito.jpg" alt="">
+                <img src="<?php echo get_bloginfo('template_url') ?>/img/static/golfito2.jpg" alt="">
               </div>
 
 
