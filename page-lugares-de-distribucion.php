@@ -175,7 +175,7 @@
                   <li>Judesur</li>
                   <li>Depósito Libre de  Golfito</li>
                   <li>Municipalidad</li>
-                  <li>Farmacias, restaurantes y oficina/li>
+                  <li>Farmacias, restaurantes y oficina </li>
                 </ul>
 
               </div>
