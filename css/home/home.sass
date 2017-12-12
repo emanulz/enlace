@@ -33,7 +33,7 @@
   border-bottom: 1px solid #D6D6D6
   padding-bottom: 30px
   & h1
-    font-size: 35px
+    font-size: 30px
     margin-bottom: 10px
     margin-top: 0
     & a
@@ -68,14 +68,24 @@
   margin-top: 30px
   border-bottom: 1px solid #D6D6D6
   padding-bottom: 30px
+  @media only screen and (max-width: $BREAK_POINT_MIN)
+    display: block
+    padding-bottom: 0
   &-item
     display: block
     max-width: 30%
+    @media only screen and (max-width: $BREAK_POINT_MIN)
+      max-width: 100%
+      padding-bottom: 30px
     &-image
       margin-bottom: 10px
     &-tittle
       height: 80px
       overflow: hidden
+      @media only screen and (max-width: $BREAK_POINT_MIN)
+        height: auto
+        & h2
+          margin-bottom: 0
     &-exerpt
       text-align: justify
       font-size: 12px

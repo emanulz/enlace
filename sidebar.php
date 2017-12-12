@@ -1,21 +1,25 @@
 <!-- sidebar -->
 <aside class="sidebar" role="complementary">
 
-	<img src="<?php echo get_bloginfo('template_url') ?>/img/adds/2.png" alt="">
+	<!-- SIDE BANNER BIG -->
+	<?php get_template_part('sideBannerBig'); ?>
+	<!-- SIDE BANNER BIG-->
 
 	<div class="sidebar-widget">
 		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-1')) ?>
 	</div>
 
-	<img src="<?php echo get_bloginfo('template_url') ?>/img/adds/peq1.jpeg" alt="">
-	<img src="<?php echo get_bloginfo('template_url') ?>/img/adds/peq2.jpeg" alt="">
+	<!-- SIDE BANNER SMALL 1 -->
+	<?php get_template_part('sideBannerSmall1'); ?>
+	<!-- SIDE BANNER SMALL 1-->
 
 	<div class="sidebar-widget">
 		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
 	</div>
 
-	<img src="<?php echo get_bloginfo('template_url') ?>/img/adds/peq4.jpeg" alt="">
-	<img src="<?php echo get_bloginfo('template_url') ?>/img/adds/peq3.jpeg" alt="">
+	<!-- SIDE BANNER SMALL 2 -->
+	<?php get_template_part('sideBannerSmall2'); ?>
+	<!-- SIDE BANNER SMALL 2-->
 
 </aside>
 <!-- /sidebar -->

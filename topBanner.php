@@ -1,6 +1,6 @@
 <section class="homeBanner">
 
-    <div id="slideshow">
+    <div id="topBanner">
       <a href="#">
         <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/1.png" alt="">
       </a>

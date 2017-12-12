@@ -62,15 +62,48 @@
 			}
 		})
 
-		$("#slideshow > a:gt(0)").hide();
+		$("#topBanner > a:gt(0)").hide();
 
 		setInterval(function() {
-			$('#slideshow > a:first')
+			$('#topBanner > a:first')
 			.fadeOut(0)
 			.next()
 			.fadeIn(0)
 			.end()
-			.appendTo('#slideshow');
+			.appendTo('#topBanner');
+		}, 6000);
+
+		$("#sideBannerBig > a:gt(0)").hide();
+
+		setInterval(function() {
+			$('#sideBannerBig > a:first')
+			.fadeOut(0)
+			.next()
+			.fadeIn(0)
+			.end()
+			.appendTo('#sideBannerBig');
+		}, 6000);
+
+		$("#sideBannerSmall1 > a:gt(0)").hide();
+
+		setInterval(function() {
+			$('#sideBannerSmall1 > a:first')
+			.fadeOut(0)
+			.next()
+			.fadeIn(0)
+			.end()
+			.appendTo('#sideBannerSmall1');
+		}, 6000);
+
+		$("#sideBannerSmall2 > a:gt(0)").hide();
+
+		setInterval(function() {
+			$('#sideBannerSmall2 > a:first')
+			.fadeOut(0)
+			.next()
+			.fadeIn(0)
+			.end()
+			.appendTo('#sideBannerSmall2');
 		}, 6000);
 
 
