@@ -1,12 +1,15 @@
 <section class="homeBanner">
 
-    <!-- <div id="topBanner">
-      <a href="http://www.frenteamplio.org/" target="_blank">
-        <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/top1.png" alt="">
+    <div id="topBanner">
+      <!-- <a href="http://www.frenteamplio.org/" target="_blank">
+        <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/frenteAmplio.jpg" alt="">
       </a>
       <a href="http://www.sergio2018.com/" target="_blank">
-        <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/top2.png" alt="">
+        <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/png.jpg" alt="">
+      </a> -->
+      <a href="http://www.infocoop.go.cr/" target="_blank">
+        <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/infocoop.jpg" alt="">
       </a>
-    </div> -->
+    </div>
 
 </section>
