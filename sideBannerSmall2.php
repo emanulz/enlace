@@ -13,6 +13,9 @@
       <a href="https://www.facebook.com/Botica-Santa-Marta-462074757202850/" target="_blank">
         <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/boticaSantaMarta.jpg" alt="">
       </a>
+      <a href="https://www.facebook.com/Aguas-Termales-Gevi-818226628195872/?ref=br_rs" target="_blank">
+        <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/gevi.jpg" alt="">
+      </a>
     </div>
 
 </section>
