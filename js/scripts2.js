@@ -1,3 +1,4 @@
+
 (function ($, root, undefined) {
 
 	$(function () {
