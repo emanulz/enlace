@@ -13,6 +13,9 @@
       <a href="http://www.infocoop.go.cr/" target="_blank">
         <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/infocoop.jpg" alt="">
       </a>
+      <a href="http://www.plncr.org/" target="_blank">
+        <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/pln.jpg" alt="">
+      </a>
     </div>
 
 </section>
