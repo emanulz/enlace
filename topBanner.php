@@ -1,6 +1,9 @@
 <section class="homeBanner">
 
     <div id="topBanner">
+      <a href="https://coopealianza.fi.cr/" target="_blank">
+        <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/coopealianza.jpg" alt="">
+      </a>
       <a href="http://www.frenteamplio.org/" target="_blank">
         <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/frenteAmplio1.jpg" alt="">
       </a>

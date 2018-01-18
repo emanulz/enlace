@@ -10,6 +10,9 @@
       <a href="http://www.rqlingenieria.com/" target="_blank">
         <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/rql.jpg" alt="">
       </a>
+      <a href="https://www.facebook.com/Rancho-Siba-435234043291746/" target="_blank">
+        <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/ranchoSiba2.jpg" alt="">
+      </a>
     </div>
 
 </section>
