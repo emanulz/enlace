@@ -70,7 +70,8 @@ iframe {
   display: -webkit-flex;
   overflow: hidden;
   flex-flow: row;
-  padding: 0 30px; }
+  padding: 0 30px;
+  z-index: 100; }
   .topMenu.fixedOnTop {
     position: fixed;
     top: 0; }
@@ -454,6 +455,13 @@ iframe {
       width: 30%;
       margin-top: 0; } }
 
+.recentBar {
+  margin: 20px 0;
+  height: 50px;
+  width: 100%;
+  border-top: 1px solid #cccc;
+  border-bottom: 1px solid #cccc; }
+
 .homeBanner {
   width: 100%;
   padding: 20px 0;
@@ -685,6 +693,26 @@ iframe {
     border: 0;
     border-top: 1px solid #D6D6D6; }
 
+.ngg-breadcrumb {
+  font-size: 17px; }
+
+.ngg-album {
+  border: none !important;
+  border-top: 1px solid #cccc !important;
+  border-bottom: 1px solid #cccc !important;
+  padding: 20px 5px !important; }
+
+.ngg-albumtitle {
+  font-size: 22px !important; }
+
+.ngg-description {
+  font-size: 14px !important;
+  font-weight: normal;
+  text-align: justify !important; }
+
+.hslice h3 {
+  font-size: 20px; }
+
 .us {
   display: block; }
   .us div {
@@ -776,6 +804,33 @@ iframe {
         padding: 15px; }
         .contactUsContainer table tbody tr td:first-child {
           text-align: left; }
+
+.contactUsContainer .wpcf7 {
+  font-size: 16px;
+  font-weight: bold; }
+  .contactUsContainer .wpcf7 label {
+    width: 100% !important; }
+  .contactUsContainer .wpcf7 input {
+    font-weight: normal;
+    font-size: 14px;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    margin-top: 10px; }
+    .contactUsContainer .wpcf7 input[type='submit'] {
+      width: 40%;
+      height: 50px;
+      background-color: #951417;
+      border-radius: 10px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold; }
+  .contactUsContainer .wpcf7 textarea {
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    resize: none; }
 
 .distribution {
   width: 100%; }

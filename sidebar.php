@@ -29,6 +29,12 @@
 	<?php get_template_part('sideBannerSmall2'); ?>
 	<!-- SIDE BANNER SMALL 2-->
 
+	<hr>
+
+	<div class="sidebar-widget">
+		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-3')) ?>
+	</div>
+
 
 
 </aside>

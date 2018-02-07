@@ -1,11 +1,7 @@
 <?php get_header(); ?>
 
 	<main role="main">
-		<section class="homeBanner">
 
-      <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/1.png" alt="">
-
-    </section>
 		<!-- section -->
 		<h1><?php echo sprintf( __( '%s Resultados de la búsqueda: ', 'html5blank' ), $wp_query->found_posts ); echo get_search_query(); ?></h1>
 

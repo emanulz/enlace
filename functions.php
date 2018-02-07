@@ -127,11 +127,15 @@ function enlace_header_scripts()
         wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1'); // Modernizr
         wp_enqueue_script('modernizr'); // Enqueue it!
 
+        wp_register_script('slickjs', get_template_directory_uri() . '/js/lib/slick.js', array('jquery'), '1.0.0'); // Custom scripts
+        wp_enqueue_script('slickjs'); // Enqueue it!
+
         wp_register_script('enlacescripts', get_template_directory_uri() . '/js/scripts2.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('enlacescripts'); // Enqueue it!
 
-        // wp_register_script('liveReload', 'http://localhost:35729/livereload.js', array(), '1.0.0'); // Custom scripts
-        // wp_enqueue_script('liveReload'); // Enqueue it!
+
+        wp_register_script('liveReload', 'http://localhost:35729/livereload.js', array(), '1.0.0'); // Custom scripts
+        wp_enqueue_script('liveReload'); // Enqueue it!
 
     }
 }
@@ -148,6 +152,7 @@ function enlace_conditional_scripts()
 // Load HTML5 Blank styles
 function enlace_styles()
 {
+
     wp_register_style('normalize', get_template_directory_uri() . '/normalize.css', array(), '1.0', 'all');
     wp_enqueue_style('normalize'); // Enqueue it!
 
@@ -160,6 +165,11 @@ function enlace_styles()
     wp_register_style('enlaceCustom', get_template_directory_uri() . '/css/main.css', array(), '1.0', 'all');
     wp_enqueue_style('enlaceCustom'); // Enqueue it!
 
+    wp_register_style('slick', get_template_directory_uri() . '/css/slick/slick.css', array(), '1.0', 'all');
+    wp_enqueue_style('slick'); // Enqueue it!
+
+    wp_register_style('slick-theme', get_template_directory_uri() . '/css/slick/slick-theme.css', array(), '1.0', 'all');
+    wp_enqueue_style('slick-theme'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation
@@ -216,7 +226,7 @@ if (function_exists('register_sidebar'))
     // Define Sidebar Widget Area 1
     register_sidebar(array(
         'name' => __('Copia Impresa:', 'enlace'),
-        'description' => __('Colocar la seccion de la compia impresa...', 'enlace'),
+        'description' => __('Colocar la seccion de la copia impresa...', 'enlace'),
         'id' => 'widget-area-1',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
@@ -229,6 +239,17 @@ if (function_exists('register_sidebar'))
         'name' => __('Publicaciones Recientes', 'enlace'),
         'description' => __('Widget de las publicaiones recientes...', 'enlace'),
         'id' => 'widget-area-2',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+
+    // Define Sidebar Widget Area 3
+    register_sidebar(array(
+        'name' => __('Galería de imágenes', 'enlace'),
+        'description' => __('Widget de galería de imágenes...', 'enlace'),
+        'id' => 'widget-area-3',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',

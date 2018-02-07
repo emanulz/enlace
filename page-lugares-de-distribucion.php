@@ -3,7 +3,7 @@
 	<main role="main">
 
 		<!-- TOP BANNER -->
-    <?php get_template_part('topBanner'); ?>
+  	<?php get_template_part('topBanner'); ?>
 		<!-- TOP BANNER -->
 
 		<!-- section -->

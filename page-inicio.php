@@ -3,18 +3,22 @@
 	<main role="main">
 
 		<!-- TOP BANNER -->
-    <?php get_template_part('topBanner'); ?>
+		<?php get_template_part('topBanner'); ?>
 		<!-- TOP BANNER -->
 
 		<!-- section -->
 		<section class="homeContainer">
 
+
+			<!-- <div class='recentBar'></div> -->
+
 			<div class="homeMain">
-				<!-- START OF FIRST SECTION, FEATURED POST -->
+				<!-- START OF FIRST SECTION, HOME SLIDER FEATURED POST -->
+				<div class="homeSlider">
         <?php
           $do_not_duplicate = array();
           $args = array(
-              'posts_per_page' => 1,
+              'posts_per_page' => 6,
               'offset' => 0,
               'category_name' => 'destacadaprincipal',
               'orderby' => 'date',
@@ -32,46 +36,49 @@
 						// array_push($do_not_duplicate, $post->ID);
             $do_not_duplicate[] = $post->ID;
           ?>
-            <div class="homeMain-featured">
+
+	            <div class="homeMain-featured">
 
 
-                  <div class="homeMain-featured-tittle">
-                    <!-- post title -->
-                    <h1>
-    									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-    								</h1>
-                    <!-- /post title -->
-                  </div>
-                  <div class="homeMain-featured-container">
+	                  <div class="homeMain-featured-tittle">
+	                    <!-- post title -->
+	                    <h1>
+	    									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+	    								</h1>
+	                    <!-- /post title -->
+	                  </div>
+	                  <div class="homeMain-featured-container">
 
-                    <div class="homeMain-featured-container-exerpt">
-                      <!-- post excerpt -->
-                      <?php html5wp_excerpt('enlace_exerpt_60'); // Build your custom callback length in functions.php ?>
-                      <!-- post excerpt -->
-                      <!-- post details -->
-                      <i class="fa fa-calendar-o"></i>
-                      <span class="date"><?php the_time('j F, Y'); ?> <?php the_time('g:i a'); ?></span>
-                      <!-- /post details -->
-                    </div>
-                    <div class="homeMain-featured-container-image">
-                      <!-- post thumbnail -->
-      								<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
-      									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-      										<?php the_post_thumbnail('enlace-medium'); // Declare pixel size you need inside the array ?>
-      									</a>
-      								<?php endif; ?>
-      								<!-- /post thumbnail -->
-                    </div>
-                  </div>
+	                    <div class="homeMain-featured-container-exerpt">
+	                      <!-- post excerpt -->
+	                      <?php html5wp_excerpt('enlace_exerpt_60'); // Build your custom callback length in functions.php ?>
+	                      <!-- post excerpt -->
+	                      <!-- post details -->
+	                      <i class="fa fa-calendar-o"></i>
+	                      <span class="date"><?php the_time('j F, Y'); ?> <?php the_time('g:i a'); ?></span>
+	                      <!-- /post details -->
+	                    </div>
+	                    <div class="homeMain-featured-container-image">
+	                      <!-- post thumbnail -->
+	      								<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
+	      									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+	      										<?php the_post_thumbnail('enlace-medium'); // Declare pixel size you need inside the array ?>
+	      									</a>
+	      								<?php endif; ?>
+	      								<!-- /post thumbnail -->
+	                    </div>
+	                  </div>
 
-            </div>
+	            </div>
+
 
           <?php
             endwhile;
           endif;
           wp_reset_postdata();
           ?>
-				<!-- END OF FIRST SECTION, FEATURED POST -->
+				</div>
+				<!-- END OF FIRST SECTION HOME SLIDER, FEATURED POST -->
 				<!-- START OF SECOND SECTION, THREE POSTS -->
 				<div class="homeMain-featuredSecond">
 

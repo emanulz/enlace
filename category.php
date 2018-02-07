@@ -5,7 +5,7 @@
 		<!-- TOP BANNER -->
 		<?php get_template_part('topBanner'); ?>
 		<!-- TOP BANNER -->
-		
+
 		<!-- section -->
 		<h1 class="category-title"><?php single_cat_title(); ?></h1>
 		<!-- CATEGORY HEADER MENU -->

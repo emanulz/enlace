@@ -5,7 +5,6 @@
 		<!-- TOP BANNER -->
 		<?php get_template_part('topBanner'); ?>
 		<!-- TOP BANNER -->
-
 	<!-- section -->
 		<section class="singleContainer">
 

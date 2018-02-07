@@ -3,7 +3,7 @@
 	<main role="main">
 
 		<!-- TOP BANNER -->
-    <?php get_template_part('topBanner'); ?>
+		<?php get_template_part('topBanner'); ?>
 		<!-- TOP BANNER -->
 
 		<!-- section -->
@@ -31,14 +31,14 @@
 								<td>Miriam Quesada Chavarría</td>
 								<td>Coordinadora</td>
 								<td>2771 2287 / 8869 0965</td>
-								<td>Miriam.quesada@enlacecr.com</td>
+								<td>miriam.quesada@enlacecr.com</td>
 							</tr>
 
 							<tr>
 								<td>Zahyleem Mora Arguello   </td>
 								<td>Directora y periodista</td>
 								<td>-</td>
-								<td>MZahy.enlace@gmail.com</td>
+								<td>zahy.enlace@gmail.com</td>
 							</tr>
 
 							<tr>
@@ -85,6 +85,11 @@
 
 						</tbody>
 					</table>
+
+					<h1>Envíenos un correo:</h1>
+
+
+					<?php echo do_shortcode('[contact-form-7 id="326" title="Contact form 1"]'); ?>
 
 				</div>
 
