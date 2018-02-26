@@ -1,6 +1,9 @@
 <section class="sideBannerBig">
 
     <div id="sideBannerBig">
+      <a href="https://www.bpdc.fi.cr/" target="_blank">
+        <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/bancoPopular.jpg" alt="">
+      </a>
       <a href="https://aissfa.ccss.sa.cr/afiliacion/" target="_blank">
         <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/ccss.jpg" alt="">
       </a>
