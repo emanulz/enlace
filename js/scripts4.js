@@ -72,7 +72,7 @@
 			.fadeIn(0)
 			.end()
 			.appendTo('#topBanner');
-		}, 8000);
+		}, 13000);
 
 		$("#sideBannerBig > a:gt(0)").hide();
 

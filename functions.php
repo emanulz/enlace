@@ -130,7 +130,7 @@ function enlace_header_scripts()
         wp_register_script('slickjs', get_template_directory_uri() . '/js/lib/slick.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('slickjs'); // Enqueue it!
 
-        wp_register_script('enlacescripts', get_template_directory_uri() . '/js/scripts3.js', array('jquery'), '1.0.0'); // Custom scripts
+        wp_register_script('enlacescripts', get_template_directory_uri() . '/js/scripts4.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('enlacescripts'); // Enqueue it!
 
 
