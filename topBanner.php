@@ -7,11 +7,11 @@
       <a>
         <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/feriaCooperativa.jpg" alt="">
       </a>
+      <a href="https://coopealianza.fi.cr/" target="_blank">
+        <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/coopeali.png" alt="">
+      </a>
       <a href="http://www.cadesurcr.com/" target="_blank">
         <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/cadesur.jpg" alt="">
-      </a>
-      <a href="https://coopealianza.fi.cr/" target="_blank">
-        <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/coopealianza.jpg" alt="">
       </a>
       <a href="http://www.infocoop.go.cr/" target="_blank">
         <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/infocoop.jpg" alt="">
