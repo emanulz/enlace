@@ -8,8 +8,12 @@
 		<section class="homeContainer">
 			
 			<div class="homeMain">
+				<div data-configid="12157890/70182140" style="width:100%; height:600px;" class="issuuembed"></div>
+				<script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
+				<!-- MARZO
 				<div data-configid="12157890/68668732" style="width:100%; height:600px;" class="issuuembed"></div>
 				<script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
+				-->
 				<!-- FEBRERO
 				<div data-configid="12157890/67918344" style="width:100%; height:600px;" class="issuuembed"></div>
 				<script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
