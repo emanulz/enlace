@@ -7,9 +7,6 @@
       <a href="https://coopealianza.fi.cr/" target="_blank">
         <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/coopealianza2.png" alt="">
       </a>
-      <a href=# target="_blank">
-        <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/gti.png" alt="">
-      </a>
       <a href="#" target="_blank">
         <img src="<?php echo get_bloginfo('template_url') ?>/img/adds/aya.jpg" alt="">
       </a>

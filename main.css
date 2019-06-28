@@ -717,6 +717,16 @@ iframe {
 .hslice h3 {
   font-size: 20px; }
 
+.printed-version-widget {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center; }
+  .printed-version-widget .widget_media_image {
+    width: 60%; }
+    .printed-version-widget .widget_media_image img {
+      width: 100%; }
+
 .us {
   display: block; }
   .us div {
